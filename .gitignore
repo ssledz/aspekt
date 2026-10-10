@@ -1,0 +1,41 @@
+# Sisyphus / OpenCode internal
+.sisyphus
+
+# JetBrains IDE
+.idea/
+
+# --- Jekyll build output ---
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# --- Bundler / Ruby ---
+.bundle/
+vendor/bundle/
+
+# --- Generated image derivatives (regenerated at build time by gallery_generator.rb) ---
+# Originals live in assets/photo-gallery/**/NN.jpg and ARE committed.
+# Thumbnails + srcset sizes are produced during `jekyll build`; never commit them.
+assets/photo-gallery/**/*-th.jpg
+assets/photo-gallery/**/*-th.webp
+assets/photo-gallery/**/*-320.jpg
+assets/photo-gallery/**/*-640.jpg
+assets/photo-gallery/**/*-960.jpg
+assets/photo-gallery/**/*-1600.jpg
+assets/photo-gallery/**/*-320.webp
+assets/photo-gallery/**/*-640.webp
+assets/photo-gallery/**/*-960.webp
+assets/photo-gallery/**/*-1600.webp
+
+# --- Sass cache ---
+.sass-cache/
+
+# --- Node (only if a build step is added later) ---
+node_modules/
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
