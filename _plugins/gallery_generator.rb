@@ -63,7 +63,7 @@ module Jekyll
     end
   end
 
-  Jekyll::Hooks.register :site, :pre_read do |site|
+  Jekyll::Hooks.register :site, :after_reset do |site|
     Gallery.generate_derivatives(site)
   end
 
