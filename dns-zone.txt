@@ -1,0 +1,35 @@
+; ============================================================================
+; DNS zone for aspekt.website — GitHub Pages custom domain (minimal)
+; ============================================================================
+;
+; HOW TO IMPORT IN OVH:
+;   1. Web Cloud -> Domeny (Domains) -> aspekt.website -> Strefa DNS (DNS zone)
+;   2. Use the import/reset feature ("Import strefy DNS" / "Zresetuj strefę DNS")
+;      and upload or paste the zone records below.
+;   3. WARNING: import REPLACES the whole zone. This file contains ONLY the
+;      GitHub Pages records — any other records (OVH email MX/SPF/DKIM, etc.)
+;      currently on the domain will be removed.
+;
+; WHAT IT CONTAINS (GitHub Pages + www + HTTPS):
+;   - Apex  aspekt.website  -> 4 x A records to GitHub Pages (185.199.108/109/110/111.153)
+;   - www   aspekt.website  -> CNAME to ssledz.github.io
+;   - HTTPS is issued automatically by GitHub (Let's Encrypt) once DNS points here.
+;
+; HOW TO VERIFY WITH dig (after import + DNS propagation):
+;   dig +short aspekt.website A             # expect: 4 x 185.199.x.153
+;   dig +short www.aspekt.website CNAME     # expect: ssledz.github.io.
+;   dig +short www.aspekt.website           # expect: the four GitHub IPs
+;
+; After DNS is verified, force the GitHub HTTPS check:
+;   Settings -> Pages -> Custom domain: remove aspekt.website, Save, re-add, Save.
+; ============================================================================
+
+$TTL 3600
+@	IN SOA dns111.ovh.net. tech.ovh.net. (2091646078 86400 3600 3600000 60)
+        IN NS     dns111.ovh.net.
+        IN NS     ns111.ovh.net.
+        IN A     185.199.108.153
+        IN A     185.199.110.153
+        IN A     185.199.109.153
+        IN A     185.199.111.153
+www        IN CNAME     ssledz.github.io.
