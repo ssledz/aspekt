@@ -11,6 +11,8 @@
 ;    dig +short aspekt.website A            # → 4 × 185.199.x.153
 ;    dig +short www.aspekt.website CNAME    # → ssledz.github.io.
 ;    dig +short www.aspekt.website          # → the GitHub IPs
+;    dig +short _github-pages-challenge-ssledz.aspekt.website TXT
+;                                           # → the challenge code
 ;
 ;  HTTPS
 ;    GitHub issues the Let's Encrypt certificate automatically once the apex
@@ -33,3 +35,6 @@ $TTL 3600
 
 ; ---- www  aspekt.website  →  GitHub Pages ---------------------------------
 www   IN  CNAME  ssledz.github.io.
+
+; ---- GitHub Pages ownership verification (temporary — remove after) -------
+_github-pages-challenge-ssledz  IN  TXT  "8d07a023507178b888285d11d05764"
