@@ -269,12 +269,10 @@ contradicts the "drop a photo, it just works" requirement.
 
 ## 11. Open Questions / Decisions
 
-1. **Originals in repo** — commit the 86 MB originals as source of truth (recommended, under limits), confirmed?
-2. **Language default** — Polish default with EN toggle, confirmed?
-3. **Custom domain** — `ssledz.github.io/aspekt/` or a real domain?
-4. **Gallery entry** — should the landing page's gallery teaser open the lightbox directly, or navigate to the full
-   `gallery.html` page? (Recommended: teaser opens `gallery.html`; gallery page owns the directory mode.)
-5. **Directory-mode default scope** — should `gallery.html` open on "all photos" (virtual directory) or on the first
-   folder (`salon`)? (Recommended: "all photos" first — gives the full apartment at a glance.)
-6. **Thumbnail format** — JPG (simplest, no alpha) or WebP (smaller, needs `picture`/fallback)? (Recommended: start
-   with JPG, optionally add WebP later.)
+1. **Originals in repo** — ✅ Commit the 86 MB originals as source of truth (well under 1 GB repo / 1 GB Pages limits).
+2. **Language default** — ✅ Polish (default) with EN toggle.
+3. **Custom domain** — ✅ Start with `ssledz.github.io/aspekt/` (project site, `baseurl: "/aspekt"`). Custom domain
+   deferred — revisit later.
+4. **Gallery entry** — ✅ Landing-page teaser opens `gallery.html` (gallery page owns the directory mode).
+5. **Directory-mode default scope** — ✅ `gallery.html` opens on "all photos" (virtual directory).
+6. **Thumbnail format** — ✅ JPG (no alpha needed). WebP deferred — revisit if size becomes an issue.
