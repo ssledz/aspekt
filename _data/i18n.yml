@@ -3,6 +3,7 @@ pl:
     title: "Wynajem mieszkania"
     offer: "Oferta"
     gallery: "Galeria"
+    contact: "Kontakt"
     language: "EN"
   hero:
     title: "Wynajmę 3-pokojowe mieszkanie 58 m²"
@@ -47,6 +48,9 @@ pl:
     title: "Lokalizacja"
     address: "ul. Aspekt 50, 01-904 Warszawa"
     map_cta: "Zobacz na mapie"
+  contact:
+    title: "Kontakt"
+    subtitle: "Zadzwoń, aby umówić się na oglądanie mieszkania."
   teaser:
     title: "Zobacz mieszkanie"
     subtitle: "Przejrzyj zdjęcia wszystkich pomieszczeń — salon, sypialnia, kuchnia, łazienka i więcej."
@@ -67,6 +71,7 @@ en:
     title: "Apartment for rent"
     offer: "Offer"
     gallery: "Gallery"
+    contact: "Contact"
     language: "PL"
   hero:
     title: "For rent: 3-room apartment, 58 m²"
@@ -111,6 +116,9 @@ en:
     title: "Location"
     address: "50 Aspekt Street, 01-904 Warsaw"
     map_cta: "View on map"
+  contact:
+    title: "Contact"
+    subtitle: "Call to arrange a viewing."
   teaser:
     title: "See the apartment"
     subtitle: "Browse photos of every room — living room, bedroom, kitchen, bathroom and more."

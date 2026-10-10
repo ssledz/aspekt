@@ -753,6 +753,67 @@ main {
   fill: #fff;
 }
 
+.contact {
+  padding-block: var(--space-16) var(--space-20);
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.contact h2 {
+  margin-bottom: var(--space-3);
+}
+
+.contact-subtitle {
+  color: var(--muted);
+  max-width: 56ch;
+  margin-bottom: var(--space-8);
+}
+
+.contact-phones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.contact-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-6);
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+  transition: border-color var(--dur) var(--ease), color var(--dur) var(--ease),
+    transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+
+.contact-phone:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-phone svg {
+  width: 20px;
+  height: 20px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.footer-phones a {
+  display: block;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.footer-phones a:hover {
+  color: var(--accent);
+}
+
 .site-footer {
   background: var(--footer-bg);
   border-top: 1px solid var(--border);
