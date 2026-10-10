@@ -2,6 +2,7 @@
   "use strict";
 
   var STORAGE_KEY = "aspekt-lang";
+  var THEME_STORAGE_KEY = "aspekt-theme";
   var defaultLang = document.documentElement.lang || "pl";
 
   function getLang() {
@@ -49,9 +50,36 @@
     apply(next);
   }
 
+  function getTheme() {
+    try {
+      var stored = localStorage.getItem(THEME_STORAGE_KEY);
+      if (stored === "light" || stored === "dark") return stored;
+    } catch (e) {
+      /* storage may be unavailable (private mode) */
+    }
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+  }
+
+  function toggleTheme() {
+    var next = getTheme() === "dark" ? "light" : "dark";
+    try {
+      localStorage.setItem(THEME_STORAGE_KEY, next);
+    } catch (e) {
+      /* storage may be unavailable (private mode) */
+    }
+    applyTheme(next);
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     apply(getLang());
+    applyTheme(getTheme());
     var btn = document.getElementById("lang-toggle");
     if (btn) btn.addEventListener("click", toggle);
+    var themeBtn = document.getElementById("theme-toggle");
+    if (themeBtn) themeBtn.addEventListener("click", toggleTheme);
   });
 })();
