@@ -1,0 +1,119 @@
+pl:
+  nav:
+    title: "Wynajem mieszkania"
+    offer: "Oferta"
+    gallery: "Galeria"
+    language: "EN"
+  hero:
+    title: "Wynajmę 3-pokojowe mieszkanie 56 m²"
+    subtitle: "W pełni umeblowane, z balkonem i garażem — idealne dla rodziny"
+    cta: "Zobacz galerię"
+  offer:
+    title: "Oferta wynajmu"
+    headline: "Wynajmę 3-pokojowe mieszkanie 56 m², w pełni umeblowane, balkon, garaż, idealne dla rodziny!"
+    intro: "Do wynajęcia jasne, przestronne i funkcjonalne mieszkanie 56 m², składające się z 3 pokoi, położone w zielonej i doskonale skomunikowanej okolicy. Idealne dla rodziny z dwójką dzieci!"
+    rooms_title: "Rozkład mieszkania"
+    rooms:
+      - name: "Sypialnia"
+        desc: "Duże, podwójne i bardzo wygodne łóżko, dwa pojemne regały na ubrania, wygodne biurko z fotelem obrotowym, toaletka z wygodnym fotelem. Sypialnia z wyjściem na duży, wspólny balkon."
+      - name: "Pokój dziecięcy"
+        desc: "Łóżko piętrowe, szafa na ubrania, biurko z obrotowym krzesłem, fragment ściany pomalowany farbą tablicową magnetyczną — idealny do rysowania i zabawy. Pokój także z wyjściem na balkon."
+      - name: "Salon z aneksem kuchennym"
+        desc: "Rozkładana sofa narożna z funkcją spania, wygodny fotel, wieszak na telewizor, w pełni umeblowane. Aneks kuchenny wyposażony w lodówkę, piekarnik, mikrofalówkę, płytę indukcyjną, zmywarkę, barek oddzielający kuchnię z dwoma hokerami. Również wyjście na balkon."
+    equipment_title: "Wyposażenie"
+    equipment:
+      - "Pralka"
+      - "Lodówka"
+      - "Piekarnik"
+      - "Mikrofala"
+      - "Płyta indukcyjna"
+      - "Zmywarka"
+    extras_title: "Dodatkowe atuty"
+    extras:
+      - "Dwa wejścia na balkon z każdego pokoju"
+      - "Podziemny garaż na platformie mobilnej"
+      - "Bliskość sklepów: Leclerc, Biedronka, piekarnia Putka, basen OSiR na Conrada"
+      - "Okolica pełna zieleni, liczne place zabaw"
+    fees_title: "Opłaty"
+    fees:
+      - label: "Wynajem"
+        value: "4000 zł / miesiąc"
+      - label: "Czynsz"
+        value: "1300 zł / miesiąc"
+      - label: "Kaucja"
+        value: "8000 zł"
+    availability: "Mieszkanie jest gotowe do zamieszkania od zaraz. Kontakt telefoniczny lub przez formularz OLX."
+  teaser:
+    title: "Zobacz mieszkanie"
+    subtitle: "Przejrzyj zdjęcia wszystkich pomieszczeń — salon, sypialnia, kuchnia, łazienka i więcej."
+    cta: "Zobacz wszystkie zdjęcia"
+  gallery:
+    title: "Galeria"
+    all: "Wszystkie"
+    loop: "Pokaz slajdów (pętla)"
+    back: "Wróć na stronę główną"
+    hint: "Kliknij zdjęcie, aby je powiększyć. Nawiguj strzałkami lub gestami."
+  footer:
+    contact: "Kontakt"
+    contact_hint: "Kontakt telefoniczny lub przez formularz OLX"
+    availability: "Dostępne od zaraz"
+
+en:
+  nav:
+    title: "Apartment for rent"
+    offer: "Offer"
+    gallery: "Gallery"
+    language: "PL"
+  hero:
+    title: "For rent: 3-room apartment, 56 m²"
+    subtitle: "Fully furnished, with balcony and garage — ideal for a family"
+    cta: "View the gallery"
+  offer:
+    title: "Rental offer"
+    headline: "For rent: 3-room apartment, 56 m², fully furnished, balcony, garage, ideal for a family!"
+    intro: "A bright, spacious and functional 56 m² apartment for rent, consisting of 3 rooms, located in a green and well-connected area. Ideal for a family with two children!"
+    rooms_title: "Apartment layout"
+    rooms:
+      - name: "Bedroom"
+        desc: "A large double, very comfortable bed, two roomy clothing shelves, a comfortable desk with a swivel chair, and a dressing table with a comfortable chair. Bedroom with access to a large shared balcony."
+      - name: "Kids' room"
+        desc: "Bunk bed, wardrobe, desk with a swivel chair, a section of wall painted with magnetic chalkboard paint — perfect for drawing and play. The room also has balcony access."
+      - name: "Living room with kitchenette"
+        desc: "Fold-out corner sofa with sleeping function, a comfortable armchair, TV wall mount, fully furnished. Kitchenette equipped with a fridge, oven, microwave, induction hob, dishwasher, and a breakfast bar separating the kitchen with two bar stools. Also balcony access."
+    equipment_title: "Equipment"
+    equipment:
+      - "Washing machine"
+      - "Fridge"
+      - "Oven"
+      - "Microwave"
+      - "Induction hob"
+      - "Dishwasher"
+    extras_title: "Additional highlights"
+    extras:
+      - "Two balcony entrances from each room"
+      - "Underground garage on a mobile platform"
+      - "Close to shops: Leclerc, Biedronka, Putka bakery, OSiR swimming pool on Conrada Street"
+      - "Green neighborhood, numerous playgrounds"
+    fees_title: "Fees"
+    fees:
+      - label: "Rent"
+        value: "4000 PLN / month"
+      - label: "Service charge"
+        value: "1300 PLN / month"
+      - label: "Deposit"
+        value: "8000 PLN"
+    availability: "The apartment is ready to move in immediately. Contact by phone or via the OLX form."
+  teaser:
+    title: "See the apartment"
+    subtitle: "Browse photos of every room — living room, bedroom, kitchen, bathroom and more."
+    cta: "See all photos"
+  gallery:
+    title: "Gallery"
+    all: "All"
+    loop: "Slideshow (loop)"
+    back: "Back to home"
+    hint: "Click a photo to enlarge it. Navigate with arrows or gestures."
+  footer:
+    contact: "Contact"
+    contact_hint: "Contact by phone or via the OLX form"
+    availability: "Available immediately"

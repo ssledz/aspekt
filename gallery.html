@@ -1,0 +1,31 @@
+---
+layout: default
+title: Galeria
+gallery: true
+---
+
+<section class="gallery-page">
+  <div class="container">
+    <h1 data-i18n="gallery.title">{{ site.data.i18n.pl.gallery.title }}</h1>
+    <p class="gallery-hint" data-i18n="gallery.hint">{{ site.data.i18n.pl.gallery.hint }}</p>
+
+    <div class="gallery-toolbar">
+      <div class="gallery-tabs" id="gallery-tabs" role="tablist">
+        <button class="tab is-active" type="button" data-scope="all" data-i18n="gallery.all">{{ site.data.i18n.pl.gallery.all }}</button>
+        {% for gallery in site.galleries %}
+        <button class="tab" type="button" data-scope="{{ gallery.id }}"
+                data-i18n-pl="{{ gallery.title.pl }}" data-i18n-en="{{ gallery.title.en }}">{{ gallery.title.pl }}</button>
+        {% endfor %}
+      </div>
+      <label class="loop-toggle">
+        <input type="checkbox" id="loop-toggle">
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+        <span class="loop-label" data-i18n="gallery.loop">{{ site.data.i18n.pl.gallery.loop }}</span>
+      </label>
+    </div>
+
+    {% include gallery.html %}
+
+    <a class="btn btn-secondary" href="{{ '/' | relative_url }}" data-i18n="gallery.back">{{ site.data.i18n.pl.gallery.back }}</a>
+  </div>
+</section>

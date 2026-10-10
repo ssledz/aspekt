@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script>window.I18N = {{ site.data.i18n | jsonify }};</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}" data-i18n="nav.title">{{ site.data.i18n.pl.nav.title }}</a>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}#offer" data-i18n="nav.offer">{{ site.data.i18n.pl.nav.offer }}</a>
+        <a href="{{ '/gallery.html' | relative_url }}" data-i18n="nav.gallery">{{ site.data.i18n.pl.nav.gallery }}</a>
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Toggle language" data-i18n="nav.language">{{ site.data.i18n.pl.nav.language }}</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4 data-i18n="footer.contact">{{ site.data.i18n.pl.footer.contact }}</h4>
+        <p data-i18n="footer.contact_hint">{{ site.data.i18n.pl.footer.contact_hint }}</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.availability">{{ site.data.i18n.pl.footer.availability }}</h4>
+      </div>
+      <div class="footer-col">
+        <p>&copy; {{ site.time | date: '%Y' }} — {{ site.title }}</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  {% if page.gallery %}
+  <script src="{{ '/assets/js/gallery.js' | relative_url }}"></script>
+  {% endif %}
+</body>
+</html>

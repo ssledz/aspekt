@@ -1,0 +1,59 @@
+# Site settings
+title: "Wynajem mieszkania 56 m²"
+description: "3-pokojowe, w pełni umeblowane mieszkanie 56 m² z balkonem i garażem do wynajęcia."
+lang: pl
+baseurl: "/aspekt" # project site -> ssledz.github.io/aspekt/
+url: "https://ssledz.github.io"
+
+# Gallery sub-folders (order here = tab order in the gallery)
+galleries:
+  - id: salon
+    title:
+      pl: Salon
+      en: Living room
+  - id: aneks-kuchenny
+    title:
+      pl: Aneks kuchenny
+      en: Kitchenette
+  - id: sypialnia
+    title:
+      pl: Sypialnia
+      en: Bedroom
+  - id: pokoj-dzieci
+    title:
+      pl: Pokój dziecięcy
+      en: Kids room
+  - id: lazienka
+    title:
+      pl: Łazienka
+      en: Bathroom
+  - id: korytarz
+    title:
+      pl: Korytarz
+      en: Hallway
+  - id: balkon
+    title:
+      pl: Balkon
+      en: Balcony
+  - id: garaz
+    title:
+      pl: Garaż
+      en: Garage
+
+# Hero image (a salon photo)
+hero_image: /assets/photo-gallery/salon/01.jpg
+
+# Exclude non-site files from the build
+exclude:
+  - SPECIFICATION.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - .idea/
+  - .sisyphus/
+  - vendor/
+
+# Sass is not used (plain CSS), but keep the key harmless.
+sass:
+  style: compressed

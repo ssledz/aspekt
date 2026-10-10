@@ -1,0 +1,15 @@
+<div class="gallery-grid" id="gallery-grid">
+  {% for photo in site.data.gallery %}
+  <a class="glightbox gallery-item"
+     href="{{ photo.full | relative_url }}"
+     data-gallery="all"
+     data-folder="{{ photo.folder }}"
+     data-srcset="{{ photo.srcset }}"
+     data-sizes="(max-width: 640px) 100vw, 80vw"
+     data-title="{{ photo.title_pl }}">
+    <img src="{{ photo.thumb | relative_url }}"
+         alt="{{ photo.title_pl }} {{ photo.name }}"
+         loading="lazy">
+  </a>
+  {% endfor %}
+</div>

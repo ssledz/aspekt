@@ -1,0 +1,87 @@
+---
+layout: home
+title: Wynajem mieszkania 56 m²
+---
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <h1 data-i18n="hero.title">{{ site.data.i18n.pl.hero.title }}</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">{{ site.data.i18n.pl.hero.subtitle }}</p>
+      <a class="btn btn-primary" href="{{ '/gallery.html' | relative_url }}" data-i18n="hero.cta">{{ site.data.i18n.pl.hero.cta }}</a>
+    </div>
+    <div class="hero-media">
+      <img src="{{ '/assets/photo-gallery/salon/01-640.jpg' | relative_url }}"
+           srcset="{{ '/assets/photo-gallery/salon/01-320.jpg' | relative_url }} 320w,
+                   {{ '/assets/photo-gallery/salon/01-640.jpg' | relative_url }} 640w,
+                   {{ '/assets/photo-gallery/salon/01-960.jpg' | relative_url }} 960w,
+                   {{ '/assets/photo-gallery/salon/01-1600.jpg' | relative_url }} 1600w"
+           sizes="(max-width: 900px) 100vw, 50vw"
+           alt="{{ site.data.i18n.pl.hero.title }}">
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="offer">
+  <div class="container">
+    <h2 data-i18n="offer.title">{{ site.data.i18n.pl.offer.title }}</h2>
+    <h3 class="offer-headline" data-i18n="offer.headline">{{ site.data.i18n.pl.offer.headline }}</h3>
+    <p class="offer-intro" data-i18n="offer.intro">{{ site.data.i18n.pl.offer.intro }}</p>
+
+    <h3 class="section-label" data-i18n="offer.rooms_title">{{ site.data.i18n.pl.offer.rooms_title }}</h3>
+    <div class="rooms">
+      {% for room in site.data.i18n.pl.offer.rooms %}
+      <div class="room">
+        <h4 data-i18n="offer.rooms.{{ forloop.index0 }}.name">{{ room.name }}</h4>
+        <p data-i18n="offer.rooms.{{ forloop.index0 }}.desc">{{ room.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h3 class="section-label" data-i18n="offer.equipment_title">{{ site.data.i18n.pl.offer.equipment_title }}</h3>
+        <ul class="check-list">
+          {% for item in site.data.i18n.pl.offer.equipment %}
+          <li data-i18n="offer.equipment.{{ forloop.index0 }}">{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3 class="section-label" data-i18n="offer.extras_title">{{ site.data.i18n.pl.offer.extras_title }}</h3>
+        <ul class="check-list">
+          {% for item in site.data.i18n.pl.offer.extras %}
+          <li data-i18n="offer.extras.{{ forloop.index0 }}">{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="section-label" data-i18n="offer.fees_title">{{ site.data.i18n.pl.offer.fees_title }}</h3>
+    <div class="fees">
+      {% for fee in site.data.i18n.pl.offer.fees %}
+      <div class="fee-row">
+        <span class="fee-label" data-i18n="offer.fees.{{ forloop.index0 }}.label">{{ fee.label }}</span>
+        <span class="fee-value" data-i18n="offer.fees.{{ forloop.index0 }}.value">{{ fee.value }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="availability" data-i18n="offer.availability">{{ site.data.i18n.pl.offer.availability }}</p>
+  </div>
+</section>
+
+<section class="teaser">
+  <div class="container">
+    <h2 data-i18n="teaser.title">{{ site.data.i18n.pl.teaser.title }}</h2>
+    <p data-i18n="teaser.subtitle">{{ site.data.i18n.pl.teaser.subtitle }}</p>
+    <div class="teaser-grid">
+      {% for photo in site.data.gallery limit: 6 %}
+      <a class="teaser-item" href="{{ '/gallery.html' | relative_url }}">
+        <img src="{{ photo.thumb | relative_url }}" alt="{{ photo.title_pl }} {{ photo.name }}" loading="lazy">
+      </a>
+      {% endfor %}
+    </div>
+    <a class="btn btn-primary btn-large" href="{{ '/gallery.html' | relative_url }}" data-i18n="teaser.cta">{{ site.data.i18n.pl.teaser.cta }}</a>
+  </div>
+</section>
