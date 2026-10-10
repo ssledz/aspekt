@@ -43,6 +43,10 @@ pl:
       - label: "Kaucja"
         value: "8000 zł"
     availability: "Mieszkanie jest gotowe do zamieszkania od zaraz. Kontakt telefoniczny lub przez formularz OLX."
+  localization:
+    title: "Lokalizacja"
+    address: "ul. Aspekt 50, 01-904 Warszawa"
+    map_cta: "Zobacz na mapie"
   teaser:
     title: "Zobacz mieszkanie"
     subtitle: "Przejrzyj zdjęcia wszystkich pomieszczeń — salon, sypialnia, kuchnia, łazienka i więcej."
@@ -103,6 +107,10 @@ en:
       - label: "Deposit"
         value: "8000 PLN"
     availability: "The apartment is ready to move in immediately. Contact by phone or via the OLX form."
+  localization:
+    title: "Location"
+    address: "50 Aspekt Street, 01-904 Warsaw"
+    map_cta: "View on map"
   teaser:
     title: "See the apartment"
     subtitle: "Browse photos of every room — living room, bedroom, kitchen, bathroom and more."

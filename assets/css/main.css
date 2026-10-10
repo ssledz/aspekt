@@ -498,6 +498,42 @@ main {
   margin-bottom: 0;
 }
 
+.localization {
+  padding-block: var(--space-16) var(--space-20);
+}
+
+.localization h2 {
+  margin-bottom: var(--space-6);
+}
+
+.localization-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.localization-address {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.localization-address svg {
+  width: 22px;
+  height: 22px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
 .teaser {
   padding-block: var(--space-16) var(--space-20);
 }
