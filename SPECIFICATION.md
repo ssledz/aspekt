@@ -5,11 +5,11 @@
 **Convention adopted:** `<NN>.jpg` (zero-padded, 2-digit sequence) inside each sub-folder. Extensions normalized
 `.jpeg` → `.jpg`.
 
-- 8 folders, 123 files renamed. No data lost.
+- 8 folders, 122 files renamed. No data lost.
+- **Duplicate removed:** `lazienka/09.jpg` was a byte-for-byte copy of `lazienka/10.jpg` (was
+  `PHOTO-2025-09-22-16-08-17(2) (kopia).jpg`) — deleted and the folder renumbered to a contiguous 19 files.
 - **Why this convention:** deterministic ordering via filename sort, trivially re-orderable by renaming,
   extension-consistent for Liquid filters, safe for `where_exp` folder matching.
-- **⚠️ Flag:** `lazienka/09.jpg` is a byte-for-byte duplicate of `lazienka/10.jpg` (was
-  `PHOTO-2025-09-22-16-08-17(2) (kopia).jpg`). Recommend deleting before launch — left in place pending decision.
 - **⚠️ Note:** name-sort groups iPhone `IMG_*` shots before WhatsApp `PHOTO-*` shots, which may not be strictly
   chronological. Reorder later by renaming `NN.jpg` if a curated tour order is wanted.
 
@@ -40,7 +40,7 @@ aspekt/
 │   └── photo-gallery/          # ← existing, 8 sub-folders (now NN.jpg)
 │       ├── salon/           (28)
 │       ├── aneks-kuchenny/  (21)
-│       ├── lazienka/        (20)
+│       ├── lazienka/        (19)
 │       ├── sypialnia/       (18)
 │       ├── pokoj-dzieci/    (17)
 │       ├── korytarz/        (10)
@@ -150,13 +150,13 @@ Every photo gets a **generated thumbnail** (see §8). The directory mode is a re
    folder's thumbnails. Clicking a thumbnail opens the lightbox scoped to that folder (`data-gallery="<id>"`),
    so arrows navigate *within* the folder.
 2. **Virtual "all photos" directory** — a "Wszystkie / All" tab that flattens all 8 folders into **one virtual
-   directory** (all 123 photos in a single grid). Every thumbnail carries `data-gallery="all"`, so arrows navigate
+   directory** (all 122 photos in a single grid). Every thumbnail carries `data-gallery="all"`, so arrows navigate
    across the entire set, in a stable order (folder order, then `NN.jpg` within each folder).
 
 Implementation note: this is a single `gallery.html` page using **client-side filtering** — the build-time generator
 emits one flat, ordered array `site.data.gallery` (`{ folder, title, thumb, full, srcset }` for all photos), inlined as
 JSON. The tab switch is pure JS (show/hide grid items + reassign the active GLightbox group), so switching directories
-is instant and requires no page reload. Thumbnails are `loading="lazy"` so the 123-photo "all" grid stays fast.
+is instant and requires no page reload. Thumbnails are `loading="lazy"` so the 122-photo "all" grid stays fast.
 
 **Lightbox viewer (GLightbox):**
 
@@ -269,13 +269,12 @@ contradicts the "drop a photo, it just works" requirement.
 
 ## 11. Open Questions / Decisions
 
-1. **Duplicate photo** (`lazienka/09.jpg` vs `10.jpg`) — delete before launch?
-2. **Originals in repo** — commit the 86 MB originals as source of truth (recommended, under limits), confirmed?
-3. **Language default** — Polish default with EN toggle, confirmed?
-4. **Custom domain** — `ssledz.github.io/aspekt/` or a real domain?
-5. **Gallery entry** — should the landing page's gallery teaser open the lightbox directly, or navigate to the full
+1. **Originals in repo** — commit the 86 MB originals as source of truth (recommended, under limits), confirmed?
+2. **Language default** — Polish default with EN toggle, confirmed?
+3. **Custom domain** — `ssledz.github.io/aspekt/` or a real domain?
+4. **Gallery entry** — should the landing page's gallery teaser open the lightbox directly, or navigate to the full
    `gallery.html` page? (Recommended: teaser opens `gallery.html`; gallery page owns the directory mode.)
-6. **Directory-mode default scope** — should `gallery.html` open on "all photos" (virtual directory) or on the first
+5. **Directory-mode default scope** — should `gallery.html` open on "all photos" (virtual directory) or on the first
    folder (`salon`)? (Recommended: "all photos" first — gives the full apartment at a glance.)
-7. **Thumbnail format** — JPG (simplest, no alpha) or WebP (smaller, needs `picture`/fallback)? (Recommended: start
+6. **Thumbnail format** — JPG (simplest, no alpha) or WebP (smaller, needs `picture`/fallback)? (Recommended: start
    with JPG, optionally add WebP later.)
