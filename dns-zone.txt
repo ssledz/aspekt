@@ -1,3 +1,5 @@
+$TTL 3600
+
 ;==============================================================================
 ;  aspekt.website — DNS zone
 ;  GitHub Pages custom domain (minimal)
@@ -19,8 +21,6 @@
 ;    and www resolve here. If it stalls, re-add the domain in Settings → Pages
 ;    → Custom domain to force a re-check.
 ;==============================================================================
-
-$TTL 3600
 
 ; ---- infrastructure (required) -------------------------------------------
 @     IN  SOA    dns111.ovh.net. tech.ovh.net. (2091646078 86400 3600 3600000 60)
