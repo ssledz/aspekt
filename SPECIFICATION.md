@@ -83,7 +83,7 @@ Both share `_layouts/default.html` for nav, language toggle, footer.
 Baleon (Artem Sheludko) is a clean portfolio with: sticky top nav, large hero typography, generous whitespace, muted
 neutral palette, subtle animations, section rhythm. Adapted here as a **single-page rental landing**:
 
-- **Hero:** "Wynajmę 3-pokojowe mieszkanie 56 m²" headline + one-line hook + primary CTA **"Zobacz galerię"** + a hero
+- **Hero:** "Wynajmę 3-pokojowe mieszkanie 58 m²" headline + one-line hook + primary CTA **"Zobacz galerię"** + a hero
   image (a salon photo).
 - **Offer section:** the formatted OLX-style content (rooms, equipment, extras, fees) — rendered from `_data/i18n.yml`
   as structured data (not a raw HTML blob) so it is beautiful and translatable.

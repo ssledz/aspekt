@@ -5,13 +5,13 @@ pl:
     gallery: "Galeria"
     language: "EN"
   hero:
-    title: "Wynajmę 3-pokojowe mieszkanie 56 m²"
+    title: "Wynajmę 3-pokojowe mieszkanie 58 m²"
     subtitle: "W pełni umeblowane, z balkonem i garażem — idealne dla rodziny"
     cta: "Zobacz galerię"
   offer:
     title: "Oferta wynajmu"
-    headline: "Wynajmę 3-pokojowe mieszkanie 56 m², w pełni umeblowane, balkon, garaż, idealne dla rodziny!"
-    intro: "Do wynajęcia jasne, przestronne i funkcjonalne mieszkanie 56 m², składające się z 3 pokoi, położone w zielonej i doskonale skomunikowanej okolicy. Idealne dla rodziny z dwójką dzieci!"
+    headline: "Wynajmę 3-pokojowe mieszkanie 58 m², w pełni umeblowane, balkon, garaż, idealne dla rodziny!"
+    intro: "Do wynajęcia jasne, przestronne i funkcjonalne mieszkanie 58 m², składające się z 3 pokoi, położone w zielonej i doskonale skomunikowanej okolicy. Idealne dla rodziny z dwójką dzieci!"
     rooms_title: "Rozkład mieszkania"
     rooms:
       - name: "Sypialnia"
@@ -65,13 +65,13 @@ en:
     gallery: "Gallery"
     language: "PL"
   hero:
-    title: "For rent: 3-room apartment, 56 m²"
+    title: "For rent: 3-room apartment, 58 m²"
     subtitle: "Fully furnished, with balcony and garage — ideal for a family"
     cta: "View the gallery"
   offer:
     title: "Rental offer"
-    headline: "For rent: 3-room apartment, 56 m², fully furnished, balcony, garage, ideal for a family!"
-    intro: "A bright, spacious and functional 56 m² apartment for rent, consisting of 3 rooms, located in a green and well-connected area. Ideal for a family with two children!"
+    headline: "For rent: 3-room apartment, 58 m², fully furnished, balcony, garage, ideal for a family!"
+    intro: "A bright, spacious and functional 58 m² apartment for rent, consisting of 3 rooms, located in a green and well-connected area. Ideal for a family with two children!"
     rooms_title: "Apartment layout"
     rooms:
       - name: "Bedroom"
