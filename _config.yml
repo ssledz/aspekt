@@ -1,6 +1,8 @@
 # Site settings
-title: "Wynajem mieszkania 58 m²"
+title: "Wynajmę mieszkanie 58 m²"
 description: "3-pokojowe, w pełni umeblowane mieszkanie 58 m² z balkonem i garażem do wynajęcia."
+# Open Graph metadata shown in social link previews (Facebook, etc.)
+og_description: "3 pokoje, w pełni umeblowane, idealne dla rodziny!"
 lang: pl
 baseurl: "" # custom domain -> aspekt.website
 url: "https://aspekt.website"
