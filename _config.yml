@@ -43,6 +43,14 @@ galleries:
 # Hero image (a salon photo)
 hero_image: /assets/photo-gallery/salon/01.jpg
 
+# Rental pricing — single source of truth for the fee amounts.
+# Change these numbers here; templates combine them with the localized
+# currency suffix from _data/i18n.yml (offer.fees[].suffix).
+pricing:
+  rent: 4000            # Wynajem / Rent (monthly)
+  service_charge: 1300  # Czynsz / Service charge (monthly)
+  deposit: 5500         # Kaucja / Deposit (one-time)
+
 # Exclude non-site files from the build
 exclude:
   - SPECIFICATION.md

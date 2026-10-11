@@ -84,7 +84,7 @@ To add a new gallery folder:
 
 ## Configuration
 
-- `_config.yml` — site title, `baseurl`, and the ordered list of gallery folders (`id`, `title.pl`, `title.en`).
+- `_config.yml` — site title, `baseurl`, the ordered list of gallery folders (`id`, `title.pl`, `title.en`), and `pricing` (the fee amounts — single source of truth for rent/service charge/deposit).
 - `_data/i18n.yml` — all Polish/English copy (offer text, navigation, gallery labels). Keep the `pl` and `en` structures symmetric.
 - `assets/css/main.css` — styles (baleon-inspired, responsive).
 - `assets/js/main.js` — language toggle.

@@ -62,7 +62,9 @@ title: Wynajem mieszkania 58 m²
       {% for fee in site.data.i18n.pl.offer.fees %}
       <div class="fee-row">
         <span class="fee-label" data-i18n="offer.fees.{{ forloop.index0 }}.label">{{ fee.label }}</span>
-        <span class="fee-value" data-i18n="offer.fees.{{ forloop.index0 }}.value">{{ fee.value }}</span>
+        <span class="fee-value"
+              data-i18n-pl="{{ site.pricing[fee.key] }} {{ site.data.i18n.pl.offer.fees[forloop.index0].suffix }}"
+              data-i18n-en="{{ site.pricing[fee.key] }} {{ site.data.i18n.en.offer.fees[forloop.index0].suffix }}">{{ site.pricing[fee.key] }} {{ fee.suffix }}</span>
       </div>
       {% endfor %}
     </div>

@@ -37,12 +37,15 @@ pl:
       - "Okolica pełna zieleni, liczne place zabaw"
     fees_title: "Opłaty"
     fees:
-      - label: "Wynajem"
-        value: "4000 zł / miesiąc"
-      - label: "Czynsz"
-        value: "1300 zł / miesiąc"
-      - label: "Kaucja"
-        value: "8000 zł"
+      - key: rent
+        label: "Wynajem"
+        suffix: "zł / miesiąc"
+      - key: service_charge
+        label: "Czynsz"
+        suffix: "zł / miesiąc"
+      - key: deposit
+        label: "Kaucja"
+        suffix: "zł"
     availability: "Mieszkanie jest gotowe do zamieszkania od zaraz. Kontakt telefoniczny lub przez formularz OLX."
   localization:
     title: "Lokalizacja"
@@ -105,12 +108,15 @@ en:
       - "Green neighborhood, numerous playgrounds"
     fees_title: "Fees"
     fees:
-      - label: "Rent"
-        value: "4000 PLN / month"
-      - label: "Service charge"
-        value: "1300 PLN / month"
-      - label: "Deposit"
-        value: "8000 PLN"
+      - key: rent
+        label: "Rent"
+        suffix: "PLN / month"
+      - key: service_charge
+        label: "Service charge"
+        suffix: "PLN / month"
+      - key: deposit
+        label: "Deposit"
+        suffix: "PLN"
     availability: "The apartment is ready to move in immediately. Contact by phone or via the OLX form."
   localization:
     title: "Location"
